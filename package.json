@@ -1,0 +1,10 @@
+{
+	"name": "fileboom",
+	"description": "Premium files distribution server for individuals",
+	"version": "0.0.1",
+	"dependencies":{
+		"express":"3.x",
+		"redis":"~0.10.0",
+		"mime":"~1.2.11"
+	}
+}
