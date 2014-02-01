@@ -13,24 +13,19 @@ var config = require("./config/config");
 */
 var routes = {};
 routes.dl = require('./routes/dl');
+routes.dashboard = require('./routes/dashboard');
 
 /**
 * Creating app
 */
 var app = express();
 
-//test tokens
-// redis.set("fileboom.tokens.files.fqjemkzjgsfe45fes453fq", "doge.png");
-// redis.set("fileboom.tokens.dl.fqjemkzjgsfe45fes453fq", 10);
-
 /**
 * Routes association
 */
 app.get("/file", routes.dl);
 
-app.get("/dashboard", function(req, res){
-	
-});
+app.get("/dashboard", routes.dashboard);
 
 app.put("/token", function(req, res){
 

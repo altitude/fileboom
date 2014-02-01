@@ -2,6 +2,10 @@ var	redis   = require("redis").createClient(),
 	fs      = require("fs"),
 	mime    = require("mime");
 
+// test tokens
+// redis.set("fileboom.tokens.files.fqjemkzjgsfe45fes453fq", "doge.png");
+// redis.set("fileboom.tokens.dl.fqjemkzjgsfe45fes453fq", 10);
+
 module.exports = function(req, res){
 
 	// Retrieve token from redis
