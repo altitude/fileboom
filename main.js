@@ -26,11 +26,17 @@ var app = express();
 /**
 * Routes association
 */
-app.get("/dl", routes.dl);
+app.get("/file", routes.dl);
 
-app.get("/test", function(req, res){
-	res.writeHead(200);
-	res.end("test");
+app.get("/dashboard", function(req, res){
+	
+});
+
+app.put("/token", function(req, res){
+
+});
+app.delete("/token", function(res, res){
+
 });
 
 /**
