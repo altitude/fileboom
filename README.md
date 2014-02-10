@@ -19,7 +19,7 @@ parameters: api_id, api_key, token, filename, downloadLimit
 
 Register a new *token* associated with *filename* with a download limit of *downloadLimit*  
 Example request:
-> curl -X PUT -d api_id=default -d api_key=default -d token=e543f3 -d filename=doge.png -d downloadLimit=10 127.0.0.1:8080/token  
+    curl -X PUT -d api_id=default -d api_key=default -d token=e543f3 -d filename=doge.png -d downloadLimit=10 127.0.0.1:8080/token  
 
 **DELETE** /token  
 parameters: api_id, api_key, token
