@@ -11,7 +11,8 @@ Simply add files in the files/ folder, and use the API to manage tokens from you
 parameters: token
 
 Download the file associated with *token*, removes 1 download credit.  
-*Example link: http://example.com/file?token=d45q3dzq3f86e4r*  
+*Example link:*
+> http://example.com/file?token=d45q3dzq3f86e4r  
 
 **PUT** /token  
 parameters: api_id, api_key, token, filename, downloadLimit
