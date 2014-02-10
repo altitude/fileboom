@@ -1,10 +1,6 @@
-var	redis   = require("redis").createClient(),
-	fs      = require("fs"),
-	mime    = require("mime");
-
-// test tokens
-// redis.set("fileboom.tokens.files.fqjemkzjgsfe45fes453fq", "doge.png");
-// redis.set("fileboom.tokens.dl.fqjemkzjgsfe45fes453fq", 10);
+var	redis = require("redis").createClient();
+var fs = require("fs");
+var mime = require("mime");
 
 module.exports = function(req, res){
 
@@ -34,7 +30,7 @@ module.exports = function(req, res){
 				return;
 			}
 
-			var remaining_downloads = parseInt(remaining);
+			var remaining_downloads = parseInt(remaining) || 0;
 
 			if(remaining_downloads === 0){
 				res.writeHead(403);
