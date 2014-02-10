@@ -1,4 +1,5 @@
 var	redis = require("redis").createClient();
+var config = require("../config/config");
 
 module.exports = function(req, res){
 	
