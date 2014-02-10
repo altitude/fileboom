@@ -17,7 +17,7 @@ Example link:
 **PUT** /token  
 parameters: api_id, api_key, token, filename, downloadLimit
 
-Register a new *token* associated with *filename* with a download limit of *downloadLimit*  
+Register a new *token* associated with *filename* with a download limit of *downloadLimit*. A download limit of -1 will allow unlimited downloads.  
 Example request:
 > curl -X PUT -d api_id=default -d api_key=default -d token=e543f3 -d filename=doge.png -d downloadLimit=10 127.0.0.1:8080/token  
 

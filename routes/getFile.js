@@ -44,7 +44,8 @@ module.exports = function(req, res){
 			file.on('open', function(){
 
 				// remove 1 download token
-				redis.decrby("fileboom.tokens.dl."+req.query.token, 1);
+				if(remaining_downloads > 0)
+					redis.decrby("fileboom.tokens.dl."+req.query.token, 1);
 
 				// send the file
 				res.writeHead(200, {
