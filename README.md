@@ -26,7 +26,7 @@ parameters: api_id, api_key, token
 
 Delete the specified token.  
 Example request:
-> curl -X DELETE -d api_id=default -d api_key=default -d token=e543f3 127.0.0.1:8080/token*  
+> curl -X DELETE -d api_id=default -d api_key=default -d token=e543f3 127.0.0.1:8080/token  
 
 ### Dependencies
 Fileboom requires Node.js v0.10+ and Redis 2.8.5+
