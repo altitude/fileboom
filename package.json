@@ -9,5 +9,8 @@
 		"expect.js":"~0.2.0",
 		"ejs":"~0.8.5",
 		"superagent":"~0.16.0"
+	},
+	"scripts":{
+		"test":"mocha ./mocha/main-test.js"
 	}
 }
