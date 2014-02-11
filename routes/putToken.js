@@ -17,6 +17,13 @@ module.exports = function(req, res){
 		return;
 	}
 
+	//checking parameters
+	if(token == undefined || filename == undefined){
+		res.writeHead(400);
+		res.end("Sorry, invalid request");
+		return;
+	}
+
 	//registering the token
 	redis.set("fileboom.tokens.files."+token, filename, function(){
 		redis.set("fileboom.tokens.dl."+token, downloadLimit, function(){

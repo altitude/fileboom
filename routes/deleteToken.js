@@ -15,6 +15,13 @@ module.exports = function(req, res){
 		return;
 	}
 
+	//checking parameters
+	if(token == undefined){
+		res.writeHead(400);
+		res.end("Sorry, invalid request");
+		return;
+	}
+
 	//delete the token from redis
 	redis.del("fileboom.tokens.files."+token, function(){
 		redis.del("fileboom.tokens.dl."+token, function(){
