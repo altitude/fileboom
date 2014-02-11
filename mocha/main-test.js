@@ -1,5 +1,6 @@
 var request = require("superagent");
 var expect = require("expect.js");
+var app = require("../main.js");
 
 describe('the PUT /token method', function(){
 
