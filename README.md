@@ -1,4 +1,4 @@
-Fileboom [![Build Status](https://travis-ci.org/altitude-labs/fileboom.png?branch=master)](https://travis-ci.org/altitude-labs/fileboom)
+Fileboom [![Build Status](https://travis-ci.org/altitude/fileboom.svg?branch=master)](https://travis-ci.org/altitude/fileboom)
 ========
 
 Fileboom is a premium files distribution server for individuals, made with Node.js.  
